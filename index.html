@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form id="validate">
+            <h1 style="text-align: center;">Event Registration Form</h1>
+
+            <div class="object">
+              <label class="labl"> Full Name *</label>
+              <input class="input" id="name" type="text" required>
+              <span id="name-error" class="error"></span>
+
+            </div>
+
+             <div class="object">
+              <label class="labl"> Email *</label>
+              <input id="email" class="input" type="text" required>
+              <span id="email-error" class="error"></span>
+
+            </div>
+             <div class="object">
+              <label class="labl"> Phone Number *</label>
+              <input id="number" type="number" class="input" type="text" required>
+              <span id="number-error" class="error"></span>
+
+            </div>
+             <div class="object">
+              <label class="labl"> Age *</label>
+              <input id="age" type="number" class="input" type="text" required>
+              <span id="age-error" class="error"></span>
+
+            </div>
+             <div class="object">
+              <label class="labl"> Gender *</label>
+              <select id="gender" class="input" required>
+                <option value="">Select</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Others</option>
+              </select>
+              <span id="gender-error" class="error"></span>
+
+            </div>
+
+             <div class="object">
+              <label class="labl"> Event Type *</label>
+              <select id="event"  class="input" required>
+                <option value="">Select</option>
+                <option value="">WorkShop</option>
+                <option  value="">Meetup</option>
+                <option value="">Talk</option>
+              </select>
+              <span id="event-error" class="error"></span>
+
+            </div>
+
+
+             <div class="object">
+              <label class="labl"> Message *</label>
+              <input id="message" class="msg-inp" type="text" required>
+              <span id="message-error" class="error"></span>
+
+            </div>
+
+            <button id="button" onclick="validate_form()" style="padding: 10px; width: 400px; background-color: rgb(68, 163, 68); border-radius: 5px ; border:none  ;" type="submit"> Submit</button>
+
+
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
